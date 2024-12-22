@@ -21,7 +21,7 @@ func AgentRequestHandler(data []byte) error {
 	defer shared.Close()
 
 	pipePath := `\\.\pipe\openssh-ssh-agent`
-	pipeTimeout := time.Second * 15
+	pipeTimeout := time.Hour
 	pipe, err := winio.DialPipe(pipePath, &pipeTimeout)
 	if err != nil {
 		return fmt.Errorf("open 1password ssh agent named pipe failed: %v", err)
