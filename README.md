@@ -15,3 +15,5 @@ Pasgent registers the Pageant Window Message Class `Pageant` and forwards ssh-ag
 Download the release and then run it.
 
 ![Command Line](screenshots/cmd.png)
+
+![Command Line](screenshots/terminal.jpg)
